@@ -1,86 +1,316 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Manual2Skill++</title>
 
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="author" content="Anonymous">
-    <!-- <meta name="description" content=""> -->
-    <meta name="viewport" content="width=800px, initial-scale=0.8, maximum-scale=2.0, user-scalable=yes">
-    <meta name="google-site-verification" content="ky_GtW3ix1x6MhH-pM6PonkpJCmE-237rRUvxvyQjVs" />
+<head>
+  <title>Manual2Skill++</title>
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-    <link rel="stylesheet" href="./static/css/bulma.min.css">
-    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
-    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
-    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-    <link rel="stylesheet" href="./static/css/index.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="author" content="Anonymous">
+  <!-- <meta name="description" content=""> -->
+  <meta name="viewport" content="width=800px, initial-scale=0.8, maximum-scale=2.0, user-scalable=yes">
+  <meta name="google-site-verification" content="ky_GtW3ix1x6MhH-pM6PonkpJCmE-237rRUvxvyQjVs" />
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script defer src="./static/js/fontawesome.all.min.js"></script>
-    <script src="./static/js/bulma-carousel.min.js"></script>
-    <script src="./static/js/bulma-slider.min.js"></script>
-    <script src="./static/js/index.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
 
-    <!-- MathJax -->
-    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>        
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+
+  <!-- MathJax -->
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
         tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
       });
     </script>
 
-    <!-- visitor statistics -->
-    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <!-- visitor statistics -->
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
-    <!-- model-viewer -->
-    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
-  </head>
+  <!-- model-viewer -->
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+</head>
 
 
-  <body>
-    <!-- Title -->
-    <section class="hero">
-      <div class="hero-body">
-        <div class="container is-max-desktop">
-          <div class="columns is-centered">
+<body>
+  <!-- Title -->
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Manual2Skill++: Connector-Aware General Robotic Assembly from
+              Instruction Manuals via Vision-Language Models</h1>
             <div class="column has-text-centered">
-              <h1 class="title is-1 publication-title">Manual2Skill++: Connector-Aware General Robotic Assembly from Instruction Manuals via Vision–Language Models</h1>
+              <div class="publication-links">
+                <!-- PDF Link -->
+                <span class="link-block">
+                  <a href="https://manual2skillpp-icra.github.io/"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://manual2skillpp-icra.github.io/"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
 
-                </div>
+                <!-- Code Link -->
+                <span class="link-block">
+                  <a href="https://manual2skillpp-icra.github.io/"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <center>
+    <section class="video container">
+      <div class="video-wrapper">
+        <iframe width="800" height="450" src="https://www.youtube.com/embed/YY0t4QPdUkE" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
     </section>
+  </center>
+
+  <section class="section">
+    <div class="container is-max-desktop has-text-centered">
+      <h2 class="title is-3">TL;DR:
+        <span class="subtitle is-4">
+          <strong>Manual2Skill++</strong> extracts connector-aware graph representations from assembly manuals to enable
+          diverse robot assembly tasks.
+        </span></h2>
+    </div>
+  </section>
 
 
-
-    <!-- Footer -->
-    <footer class="footer", style="padding: 40px 0;">
-      <div class="container">
-        <div class="columns is-centered">
-          <div class="column is-8">
-            <div class="content">
-              <p style="text-align: center;">
-                This website is designed based on
-                <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
-                <br>
-                Thanks for your visiting😊!
-                <span id="busuanzi_container_site_pv">
-                  Total Page Views: <span id="busuanzi_value_site_pv"></span>
-                </span>
-                <br>
-              </p>
-            </div>
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Assembly success hinges on precise connector operations like mortise-tenon joints, dowels, and screws.
+              However, most robotic assembly research has focused on high-level planning or pose estimation,
+              treating connectors as an afterthought. <strong>Manual2Skill++</strong> systematically extracts
+              connector-aware
+              representations directly from instruction manuals by transforming manual images into a hierarchical
+              graph that explicitly models connector types, quantities, and spatial relationships. We then apply
+              a training-free, constraint-based part alignment module to achieve millimeter-level accuracy, followed
+              by search-based motion planning to insert each connector into its correct pose. We validate our
+              approach on a dataset of 21 diverse assembly tasks spanning IKEA furniture, Lego models, and mechanical
+              assemblies, and demonstrate four representative tasks in Isaac Gym simulation and physical setups,
+              achieving consistent millimeter-level placement accuracy.
+            </p>
           </div>
         </div>
       </div>
-    </footer>
-    <!--/ Footer -->
+      <!--/ Abstract -->
+    </div>
+  </section>
 
-  </body>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Overview</h2>
+        </div>
+      </div>
+    </div>
+    <div class="container is-max-desktop">
+      <img src="./static/img/pipeline.png" alt="Figure 2 overview">
+      <!-- Replace with Fig.2 from the paper -->
+      <p class="fig-caption"><strong>Figure 1</strong>: (1) A VLM processes manual images to extract part and
+        connector relations, generating a connection-enriched hierarchical assembly representation.
+        (2) The extracted connection constraints guide a geometric optimization process to compute precise target
+        poses for parts and connectors.
+        (3) The system executes the assembly by planning and performing robotic actions based on the
+        connection-enriched hierarchical graph and aligned poses.</p>
+  </section>
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Dataset & Benchmark</h2>
+        </div>
+      </div>
+    </div>
+    <div class="container is-max-desktop">
+      <img src="./static/img/dataset.png" alt="Figure 2 overview">
+      <!-- Replace with Fig.2 from the paper -->
+      <p class="fig-caption"><strong>Figure 2</strong>: The dataset comprises <strong>21</strong> representative
+        assembly tasks, each
+        with high-fidelity 3D part models, manual pages for every step, and fully annotated connection information. From
+        this collection, we selected four tasks and implemented them in Isaac Lab, designing connection mechanics to
+        enable long-horizon assembly with explicit connector operations that directly correspond to real-world
+        procedures.</p>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column">
+          <h2 class="title is-3 has-text-centered">Gallery of Benchmark Tasks</h2>
+        </div>
+      </div>
+
+      <section class="hero is-light">
+        <div class="hero-body">
+          <div class="container">
+            <div id="results-carousel" class="carousel results-carousel">
+              <div class="item item-chair1">
+                <video poster="" id="chair1" autoplay controls muted loop playsinline height="100%">
+                  <source src="./static/img/chair1-1.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-chair2">
+                <video poster="" id="chair2" autoplay controls muted loop playsinline height="100%">
+                  <source src="./static/img/chair2-1.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-lego1">
+                <video poster="" id="lego1" autoplay controls muted loop playsinline height="100%">
+                  <source src="./static/img/lego1-1.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-lego2">
+                <video poster="" id="lego2" autoplay controls muted loop playsinline height="100%">
+                  <source src="./static/img/lego2-1.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-shelf1">
+                <video poster="" id="shelf1" autoplay controls muted loop playsinline height="100%">
+                  <source src="./static/img/shelf1-1.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-shelf2">
+                <video poster="" id="shelf2" autoplay controls muted loop playsinline height="100%">
+                  <source src="./static/img/shelf2-1.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-plane1">
+                <video poster="" id="plane1" autoplay controls muted loop playsinline height="100%">
+                  <source src="./static/img/plane1-1.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-plane2">
+                <video poster="" id="plane2" autoplay controls muted loop playsinline height="100%">
+                  <source src="./static/img/plane2-1.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="hero is-light">
+        <div class="hero-body">
+          <div class="container">
+            <div id="results-carousel" class="carousel results-carousel">
+              <div class="item item-chair1">
+                <video poster="" id="chair1" autoplay controls muted loop playsinline height="100%">
+                  <source src="./static/img/chair_dowel_processed-1.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-chair2">
+                <video poster="" id="chair2" autoplay controls muted loop playsinline height="100%">
+                  <source src="./static/img/chair_rod_processed-1.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-lego1">
+                <video poster="" id="lego1" autoplay controls muted loop playsinline height="100%">
+                  <source src="./static/img/lego_arm_processed-1.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-lego2">
+                <video poster="" id="lego2" autoplay controls muted loop playsinline height="100%">
+                  <source src="./static/img/lego_head_processed-1.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-shelf1">
+                <video poster="" id="shelf1" autoplay controls muted loop playsinline height="100%">
+                  <source src="./static/img/shelf_side_processed-1.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-shelf2">
+                <video poster="" id="shelf2" autoplay controls muted loop playsinline height="100%">
+                  <source src="./static/img/shelf_truss_processed-1.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-plane1">
+                <video poster="" id="plane1" autoplay controls muted loop playsinline height="100%">
+                  <source src="./static/img/plane_crossbar_processed-1.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-plane2">
+                <video poster="" id="plane2" autoplay controls muted loop playsinline height="100%">
+                  <source src="./static/img/plane_wheel_processed-1.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- Footer -->
+      <footer class="footer" , style="padding: 40px 0;">
+        <div class="container">
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <div class="content">
+                <p style="text-align: center;">
+                  This website is designed based on
+                  <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+                  <br>
+                  Thanks for your visiting😊!
+                  <span id="busuanzi_container_site_pv">
+                    Total Page Views: <span id="busuanzi_value_site_pv"></span>
+                  </span>
+                  <br>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--/ Footer -->
+
+</body>
+
 </html>
